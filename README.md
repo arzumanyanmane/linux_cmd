@@ -1,1 +1,1 @@
-# linux_cmd
+# Linux command implementation
