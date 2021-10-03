@@ -1,3 +1,5 @@
-int main() {
+// mv [Option] source destination
+
+int main(int argc, char **argv){
   return 0;
 }

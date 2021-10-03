@@ -1,3 +1,5 @@
-int main() {
+//rm [OPTION]... FILE...
+
+int main(int argc, char **argv){
   return 0;
 }
