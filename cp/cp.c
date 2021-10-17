@@ -1,13 +1,7 @@
 // cp [option] Source Destination
-// yes, copied from stackoverflow, but with understanding )) 
-// permission difference ?
-// where to see return value ?
-// why buffer ?
-// how is working in real life ? 
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 #include <fcntl.h>
 
 int main(int argc, char **argv){

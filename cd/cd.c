@@ -1,10 +1,14 @@
 // cd [option] [directory]
-// zsh: bus error ?
 #include <stdio.h>
 #include <unistd.h> 
 #include <dirent.h>
 #include <errno.h>
-int main(int argc, char **argv){   
+#include <limits.h>
+
+
+int main(int argc, char **argv){ 
+  char cwd[PATH_MAX];  
+  printf("%i", PATH_MAX);
   if(argc == 1){
     chdir("/");
   }else if (argc == 2){
@@ -20,6 +24,8 @@ int main(int argc, char **argv){
       printf("opendir() failed for some other reason.\n"); 
     }
   }  
-  printf("last directory : %s\n", getcwd("", 100));
+  if (getcwd(cwd, sizeof(cwd)) != NULL) {
+    printf("Current working dir: %s\n", cwd);
+  }
   return 0;
 }
