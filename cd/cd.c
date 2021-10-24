@@ -21,7 +21,7 @@ int main(int argc, char **argv){
     } else if (ENOENT == errno) {
       printf("Directory does not exist. \n");
     } else {
-      printf("opendir() failed for some other reason.\n"); 
+      printf("opendir() failed for some other reason. %d\n", errno); 
     }
   }  
   if (getcwd(cwd, sizeof(cwd)) != NULL) {
