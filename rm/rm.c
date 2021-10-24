@@ -14,9 +14,7 @@ int main(int argc, char **argv){
   if (argc < 2){
     return -1;
   }
-  char *p;
-  struct stat st;
-
+  
   if (isRegular(argv[1])){
     remove(argv[1]);
   }else{

@@ -5,6 +5,9 @@
         "errno.h": "c",
         "stdio.h": "c",
         "stdlib.h": "c",
-        "stat.h": "c"
+        "stat.h": "c",
+        "istream": "c",
+        "fcntl.h": "c",
+        "algorithm": "c"
     }
 }
