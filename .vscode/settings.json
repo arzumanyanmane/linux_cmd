@@ -8,6 +8,8 @@
         "stat.h": "c",
         "istream": "c",
         "fcntl.h": "c",
-        "algorithm": "c"
+        "algorithm": "c",
+        "types.h": "c",
+        "string.h": "c"
     }
 }
